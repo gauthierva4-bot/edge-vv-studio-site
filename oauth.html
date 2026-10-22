@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connecting - EDGE CG SOFTWARE</title>
+<style>body{background:#000;color:#fff;font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;margin:0}a{color:#fff}</style></head>
+<body><main><h1>EDGE CG SOFTWARE</h1><p id="m">Finishing your connection&hellip;</p><p><a href="index.html">EDGE Verse &amp; Vision Studio</a></p></main>
+<script>
+(function(){var q=location.search+location.hash;var p=new URLSearchParams(location.search);
+var m=document.getElementById('m');
+if(p.get('error')){m.textContent='Connection was cancelled or failed. You can close this page and try again in the app.';}
+else if(p.get('code')){m.textContent='Account connected. Returning you to EDGE CG SOFTWARE\u2026';
+try{location.replace('edgecg://oauth'+q);}catch(e){}
+setTimeout(function(){m.textContent='Account connected. You can close this page and go back to the EDGE CG SOFTWARE app.';},2500);}
+else{m.textContent='You can close this page and go back to the EDGE CG SOFTWARE app.';}})();
+</script></body></html>
