@@ -1,4 +1,4 @@
-// Free audit form: posts to Formspree once FORMSPREE_ENDPOINT is replaced; otherwise falls back to email.
+// Free audit form: posts to Web3Forms; otherwise falls back to email.
 (function(){
   var f=document.getElementById('auditForm'),m=document.getElementById('formMsg');
   if(!f)return;

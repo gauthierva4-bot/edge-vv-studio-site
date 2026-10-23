@@ -58,11 +58,12 @@
 
 <section id="audit"><div class="w audit">
 <div><div class="kick">FREE AUDIT</div><h2 style="margin-top:12px">Is your Google or Instagram costing you customers?</h2><p class="muted" style="font-size:18px;margin-top:18px">Tell us your business and we'll send a short, honest report on what to fix. Free, no strings. We reply the same business day.</p></div>
-<form id="auditForm" action="FORMSPREE_ENDPOINT" method="POST">
+<form id="auditForm" action="https://api.web3forms.com/submit" method="POST">
+<input type="hidden" name="access_key" value="36ed742a-f1f7-4f38-838e-3daa4850f5e4"><input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 <label for="biz">Business name</label><input id="biz" name="business" required placeholder="e.g. Desert Bloom Café">
 <label for="em">Email</label><input id="em" name="email" type="email" required placeholder="you@business.com">
 <label for="link">Instagram handle or Google listing link (optional)</label><input id="link" name="profile" placeholder="@yourbusiness or Google Maps link">
-<input type="hidden" name="_subject" value="New free audit request">
+<input type="hidden" name="subject" value="New free audit request - EDGE VV Studio">
 <button class="btn p" type="submit">Send my free audit</button>
 <p class="formmsg" id="formMsg" role="status"></p>
 </form>
