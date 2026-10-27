@@ -13,7 +13,7 @@
     if(act.indexOf('https://')!==0){mail();return;}
     m.textContent='Sending…';
     fetch(act,{method:'POST',body:d,headers:{Accept:'application/json'}})
-      .then(function(r){if(!r.ok)throw 0;f.reset();m.textContent="Got it! We'll send your free audit the same business day.";})
+      .then(function(r){if(!r.ok)throw 0;f.reset();m.textContent="Got it! We aim to reply within 2 business days.";})
       .catch(mail);
   });
 })();
